@@ -2,30 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le catering</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Le Catering shop , its menu-description and contact details" />
+  <meta name="keywords" content="Le catering, Restaurant, Food shop, Fast food, Burger, Pancakes, 
+  contact Le catering, catering, catering Service" />
+  <title>Gaurmet au Catering</title>
+  <link rel="icon" type="image/x-icon" href="./images/download (1).png">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!--header section start here-->
+
   <header class="header-section">
     <h1>Gaurmet au Catering</h1>
-    <ul class="header-pages-link">
-      <li>About</li>
-      <li>Menu</li>
-      <li>Contact</li>
-    </ul>
+    <nav>
+      <ul class="header-pages-link">
+        <li><a href="#FIXME">About</a></li>
+        <li><a href="#FIXME">Menu</a></li>
+        <li><a href="#FIXME">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+  <!--header section end here-->
+  <!--Main section start here-->
+
   <main class="main-section">
-    <div class="first-main-section">
+    <!--Heading with background image section starts here-->
+    <div class="heading-with-background-image">
       <h2>Le Catering</h2>
     </div>
-    <div class="second-main-section">
-      <img class="second-image" src="./images/tablesetting2.jpg" alt="Secondary image">
+    <!--Heading with background image section ends here-->
+    <!--Image and About section starts here-->
+    <div class="image-and-about-section">
+      <img class="second-image" src="./images/tablesetting2.jpg" alt="Image showing 3 plates with sandwiches on table">
       <div class="first-text">
         <h2>About Catering</h2>
-        <span class="span-of-first-text">Tradition since 1889</span>
+        <h3>Tradition since 1889</h3>
         <p class="first-part-of-first-text">The catering was founded in blabla by Mr.Smith in lorem ipsum <br>
           dolor sit amet, consectetur edipiscing elit consectetur elit, <br>
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
@@ -43,44 +57,66 @@
         </p>
       </div>
     </div>
-    <div class="third-main-section">
+    <!--Image and About section ends here-->
+    <!--Image name menu section starts here-->
+    <div class="image-and-menu">
       <div class="second-text">
         <h2>Our Menu</h2>
-        <span class="menu-titles">Bread Basket</span>
-        <p class="menu-description">Assortment of fresh baked fruit breads and muffins 5.50</p>
-        <span class="menu-titles">Honey Almond Granola with Fruits</span>
-        <p class="menu-description">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-        <span class="menu-titles">Belgian Waffle</span>
-        <p class="menu-description">Vanilla flavoured batter with malted flour 7.50</p>
-        <span class="menu-titles">Scrambled eggs</span>
-        <p class="menu-description">Scrambled eggs, roasted red pepper and garlic with green onions 7.50</p>
-        <span class="menu-titles"> with syrup, butter and lots of berries 8.50 </span>
-        <p class="menu-description">Blueberry Pancakes</p>
+        <ul>
+          <li>
+            <h3>Bread Basket</h3>
+            <p class="menu-description">Assortment of fresh baked fruit breads and muffins 5.50</p>
+          </li>
+          <li>
+            <h3>Honey Almond Granola with Fruits</h3>
+            <p class="menu-description">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+          </li>
+          <li>
+            <h3>Belgian Waffle</h3>
+            <p class="menu-description">Vanilla flavoured batter with malted flour 7.50</p>
+          </li>
+          <li>
+            <h3>Scrambled eggs</h3>
+            <p class="menu-description">Scrambled eggs, roasted red pepper and garlic with green onions 7.50</p>
+          </li>
+          <li>
+            <h3>Blueberry Pancakes</h3>
+            <p class="menu-description">with syrup, butter and lots of berries 8.50</p>
+          </li>
+        </ul>
       </div>
-      <img class="third-image" src="./images/tablesetting.jpg" alt="Third image">
+      <img class="third-image" src="./images/tablesetting.jpg"
+        alt="Image showing one dessert on table with multiple pieces">
     </div>
-    <div class="fourth-main-section">
+    <!--Image name menu section ends here-->
+    <!--Contact and forms section start here-->
+    <div class="contact-and-form">
       <h2>Contact</h2>
       <p class="menu-description">We offer full-service catering for any event, large or small. We understand your needs
         and
         we will cater the food to satisfy the biggerst criteria of them all, both look and taste. <br>
         Do not hesitate to contact us. </p>
       <address>Catering Service, 42nd living St,43043 New York, NY</address>
-      <p class="menu-description">You can also contact us by phone 00553121-2323 or email catering@catering.com,
+      <p class="menu-description">You can also contact us by phone <a href="tel:00553121-2323">00553121-2323</a> or
+        email <a href="email:catering@catering.com">catering@catering.com</a>,
         you can send us message here:</p>
       <form class="form-inputs" action="#FIXME" method="post">
         <input type="text" placeholder="Name" name="Name" title="Name"> <br>
         <input type="number" placeholder="How many people" Name="How many people" title="How many people"> <br>
         <input type="datetime-local" name="Date and time" title="Date and Time"><br>
-        <input type="text" placeholder="message/Special requirements" name="Please write message"
-          title="Please write message"><br>
-        <button>SEND MESSAGE</button>
+        <textarea type="text" placeholder="message/Special requirements" name="Please write message"></textarea><br>
+        <button type="submit" value="submit">SEND MESSAGE</button>
       </form>
     </div>
+    <!--Contact and forms section ends here-->
   </main>
+
+  <!--Footer section start here-->
   <footer>
-    <span>Powered by <a href="">w3.css</a> </span>
+    <span>Powered by <a href="">w3.css</a></span>
   </footer>
+  <!--Footer section ends here-->
+
 
 </body>
 
