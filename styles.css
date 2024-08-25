@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.first-main-section {
+.heading-with-background-image {
   background-image: url(./images/hamburger.jpg);
   background-size: cover;
   height: 600px;
