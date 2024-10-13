@@ -1,138 +1,284 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* Css reset styles starts here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Css reset styles ends here */
+
+/* styles for header section starts here */
 header {
   display: flex;
   justify-content: space-between;
-  margin: 20px 25px;
+  align-items: center;
+  height: 70px;
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .header-pages-link {
   display: flex;
   font-size: 1em;
-  width: 300px;
   justify-content: space-between;
+}
+
+.header-pages-link>li {
+  margin-right: 30px;
+}
+
+.header-pages-link>li:last-child {
+  right: 54px;
+  top: 50px;
+  position: fixed;
+}
+
+.header-pages-link>li>a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgba(73, 143, 143, 0.754);
+  letter-spacing: 2.1px;
+}
+
+.header-pages-link>li>a:hover {
+  color: rgb(33, 21, 5);
 }
 
 h1 {
   font-size: 1em;
   letter-spacing: 2.5px;
-  color: rgba(73, 143, 143, 0.754);
+}
 
+h1 > a {
+  text-decoration: none;
+  color: rgba(73, 143, 143, 0.754);
+}
+
+a:hover {
+  color: #3b1fd7;
 }
 
 ul {
   list-style: none;
 }
+/* styles for header section ends here */
 
+/* styles for main section starts here */
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* styles for heading with background image section starts here */
 .heading-with-background-image>h2 {
-  padding: 540px 25px;
-  font-size: 1.8em;
+  position: relative;
+  top: 600px;
+  left: 50px;
+  font-size: 3.2em;
   letter-spacing: 3px;
-  color: rgba(73, 143, 143, 0.754);
+  color: rgba(73, 143, 143, 1);
   font-weight: 400;
 }
 
 .heading-with-background-image {
   background-image: url(./images/hamburger.jpg);
   background-size: cover;
-  height: 600px;
+  height: 700px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* styles for heading with background image section ends here */
+
+/* styles for image and about section starts here */
 .image-and-about-section {
   display: flex;
 }
 
 .second-image {
-  margin: 80px 40px 0px 160px;
+  margin: 80px 0px 0px 0px;
+  height: 600px;
+  width: 500px;
 }
 
 .first-text {
-  margin: 120px 40px 0px 20px;
+  margin: 120px 0px 0px 80px;
 }
 
 .first-text>h2 {
   font-size: 1.8em;
+  text-align: center;
   letter-spacing: 3px;
   color: rgba(73, 143, 143, 0.754);
   font-weight: 600;
-  margin-left: 120px;
 }
 
 .first-text>h3 {
   font-size: 1em;
+  text-align: center;
   letter-spacing: 4px;
-  margin-left: 130px;
+  /* margin-left: 130px; */
   margin-top: 50px;
-  color:  rgba(73, 143, 143, 0.754);
+  color: rgba(73, 143, 143, 0.754);
 }
 
 .first-part-of-first-text {
-  padding: 0px 210px 30px 0px;
-  margin-left: 30px;
   margin-top: 20px;
   line-height: 25px;
+  max-width: 500px;
 }
 
 .seasonal {
-  background-color:  rgba(73, 143, 143, 0.2);
+  background-color: rgba(73, 143, 143, 0.2);
 }
 
 .second-part-of-first-para {
-  padding: 0px 200px 30px 0px;
-  margin-left: 30px;
+  margin-top: 20px;
+  max-width: 500px;
   line-height: 25px;
-  color:  rgba(73, 143, 143, 0.754);
+  color: rgba(73, 143, 143, 0.754);
 }
+/* styles for image and about section ends here */
 
-.second-text> h2 {
+/* styles for image and menu section starts here */
+
+.second-text>h2 {
   font-size: 1.8em;
+  text-align: center;
   letter-spacing: 3px;
   color: rgba(73, 143, 143, 0.754);
   font-weight: 600;
-  margin: 90px 0px 0px 330px;
+  margin: 90px 0px 0px 0px;
 
+}
+
+.second-text {
+  margin: 100px 100px 0px 0px;
 }
 
 .image-and-menu {
@@ -140,73 +286,113 @@ ul {
 }
 
 .third-image {
-  margin: 90px 0px 0px 190px;
-  height: 700px;
+  margin: 90px 0px 0px 0px;
+  height: 650px;
+  width: 530px;
 }
 
-li> h3 {
+li>h3 {
   font-size: 1em;
   letter-spacing: 4px;
-  margin-left: 190px;
+  /* margin-left: 190px; */
   margin-top: 50px;
-  color:  rgba(73, 143, 143, 0.754);
+  color: rgba(73, 143, 143, 0.754);
 }
 
-li> p {
+li>p {
   font-size: 0.8em;
-  margin-left: 190px;
+  /* margin-left: 190px; */
   margin-top: 20px;
-  color:  rgba(73, 143, 143, 0.754);
+  color: rgba(73, 143, 143, 0.754);
 }
 
-.contact-and-form> h2 {
+/* styles for image and menu section ends here */
+
+/* styles for contact and form section starts here */
+.contact-and-form>h2 {
   font-size: 1.8em;
   letter-spacing: 3px;
   color: rgba(73, 143, 143, 0.754);
   font-weight: 600;
-  margin: 90px 0px 50px 190px;
+  margin: 90px 0px 0px 0px;
 }
 
-.contact-and-form  p  {
+.contact-and-form p {
   font-size: 0.8em;
-  margin-left: 190px;
+  /* margin-left: 190px; */
   margin-top: 20px;
-  color:  rgba(73, 143, 143, 0.9);
+  color: rgba(73, 143, 143, 0.9);
 }
 
-.contact-and-form > h2 + p + p {
+.contact-and-form>h2+p+p {
   margin-top: 5pt;
 }
 
-.contact-and-form > h2 + p + p + p {
+.contact-and-form>h2+p+p+p {
   text-decoration: none;
 }
 
-address{
+.menu-description>a {
+  text-decoration: none;
+  color: rgba(73, 143, 143, 0.754);
+
+}
+
+.menu-description>a:hover {
+  color: #000;
+}
+
+address {
   font-size: 0.9em;
-  color:  rgba(73, 143, 143, 1);
-  margin-left: 190px;
+  color: rgba(73, 143, 143, 1);
   margin-top: 17pt;
-} 
+}
 
 .form-inputs {
   margin-top: 30px;
   display: grid;
+  max-width: 1000px;
+  row-gap: 25px;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-bottom: 15pt;
+  border-color :#f0e7e7;
+  border-width: 1.5pt;
 }
 
 button {
-  margin-left: 13%;
-  width: 10%;
-  height: 150% 
+  text-align: center;
+  width: 14%;
+  height: 200%;
+  border: none;
 }
 
+button:hover {
+  background-color: #c66565;
+}
+
+/* styles for contact and form section ends here */
+/* styles for main section ends here */
+
+/* styles for footer section starts here */
 footer {
+  display: flex;
   height: 90px;
-  margin-top: 50px;
   background-color: #f0f0f0;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-footer> span {
-  margin-left: 45%;
+footer>span>a:hover {
+  color: #ca4848;
 }
+
+footer>span>a {
+  text-decoration: none;
+}
+/* styles for footer section ends here */
